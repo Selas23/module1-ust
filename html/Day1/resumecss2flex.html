@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex2</title>
+<style>
+    html,body{
+        height: 100%;
+        width: 100%;
+        padding: 0%;
+        margin: 0%;
+    }
+    body{
+        display: flex;
+        flex-direction: column;
+    }
+    header,article,aside,footer{
+        border: 1px solid #000;
+    }
+    header{
+        height: 75px;
+    }
+    main{
+        display: flex;
+        flex-direction: row;
+        flex: auto;
+        background-color: mistyrose;
+        justify-content: center;
+    }
+    article{
+        flex: auto;
+    }
+    aside{
+        width: 150px;
+    }
+    footer{
+        height: 50px;
+    }
+</style>
+</head>
+<body>
+    <header><h1>Selas P Biju</h1></header>
+    <main>
+        <aside>Recent History</aside>
+        <article>My Credentials</article>
+        <aside>My Testimonials</aside>
+    </main>
+    <footer>Footer</footer>
+</body>
+</html>

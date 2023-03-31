@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+figure {
+    border: thin #c0c0c0 solid;
+    display: flex;
+    flex-flow: column;
+    padding: 5px;
+    max-width: 220px;
+    margin: auto;
+}
+
+img {
+    max-width: 220px;
+    max-height: 150px;
+}
+
+figcaption {
+    background-color: #222;
+    color: #fff;
+    font: italic smaller sans-serif;
+    padding: 3px;
+    text-align: center;
+}
+
+legend {
+    background-color: #000;
+    color: #fff;
+    padding: 3px 6px;
+}
+
+input {
+    margin: 0.4rem;
+}
+.batman {
+    background-color: #d7d9f2;
+}
+
+.flash {
+    background-color: #ffe8d4;
+}
+
+caption {
+    padding: 8px;
+    caption-side: bottom;
+}
+
+table {
+    border-collapse: collapse;
+    border: 2px solid rgb(100, 100, 100);
+    letter-spacing: 1px;
+    font-family: sans-serif;
+    font-size: 0.7rem;
+}
+
+td,
+th {
+    border: 1px solid rgb(100, 100, 100);
+    padding: 10px 10px;
+}
+
+td {
+    text-align: center;
+}
+
+kbd {
+    background-color: #eee;
+    border-radius: 3px;
+    border: 1px solid #b4b4b4;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2), 0 2px 0 0 rgba(255, 255, 255, 0.7) inset;
+    color: #333;
+    display: inline-block;
+    font-size: 0.85em;
+    font-weight: 700;
+    line-height: 1;
+    padding: 2px 4px;
+    white-space: nowrap;
+}
+
+#example-paragraphs {
+    background-color: white;
+    overflow: hidden;
+    resize: horizontal;
+    width: 9rem;
+    border: 2px dashed #999;
+}
+
+
+    </style>
+</head>
+<body>
+    <label for="ice-cream-choice">Choose a flavor:</label>
+<input list="ice-cream-flavors" id="ice-cream-choice" name="ice-cream-choice">
+
+<datalist id="ice-cream-flavors">
+    <option value="Chocolate">
+    <option value="Coconut">
+    <option value="Mint">
+    <option value="Strawberry">
+    <option value="Vanilla">
+</datalist>
+
+<embed type="video/webm"
+       src="../Day1/video/big_buck_bunny_720p_1mb.mp4"
+       width="250"
+       height="200">
+
+       <canvas width="300" height="300" >
+        An alternative text describing what your canvas displays.
+      </canvas>
+
+      <figure>
+        <img src="../Day1/img/road.jpeg"
+             alt="a long way">
+        <figcaption>A road not taken</figcaption>
+    </figure>
+
+    <form>
+        <fieldset>
+          <legend>Choose your favorite monster</legend>
+      
+          <input type="radio" id="kraken" name="monster" value="K">
+          <label for="kraken">Kraken</label><br>
+      
+          <input type="radio" id="sasquatch" name="monster" value="S">
+          <label for="sasquatch">Sasquatch</label><br>
+      
+          <input type="radio" id="mothman" name="monster" value="M">
+          <label for="mothman">Mothman</label>
+        </fieldset>
+      </form>
+
+      <h1>World wrestling championships</h1>
+
+      <ul>
+         <li><bdi class="name">Evil Steven</bdi>: 1st place</li>
+         <li><bdi class="name">François fatale</bdi>: 2nd place</li>
+         <li><span class="name">سما</span>: 3rd place</li>
+         <li><bdi class="name">الرجل القوي إيان</bdi>: 4th place</li>
+         <li><span class="name" dir="auto">سما</span>: 5th place</li>
+      </ul>
+
+      <table>
+        <caption>Superheros and sidekicks</caption>
+        <colgroup>
+            <col>
+            <col span="2" class="batman">
+            <col span="2" class="flash">
+        </colgroup>
+        <tr>
+            <td> </td>
+            <th scope="col">Batman</th>
+            <th scope="col">Robin</th>
+            <th scope="col">The Flash</th>
+            <th scope="col">Kid Flash</th>
+        </tr>
+        <tr>
+            <th scope="row">Skill</th>
+            <td>Smarts</td>
+            <td>Dex, acrobat</td>
+            <td>Super speed</td>
+            <td>Super speed</td>
+        </tr>
+    </table>
+      
+    <dialog open>
+        <p>Greetings, one and all!</p>
+        <form method="dialog">
+          <button>OK</button>
+        </form>
+      </dialog>
+
+      <p>Please press <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>R</kbd> to re-render an MDN page.</p>
+
+      <map name="infographic">
+        <area shape="poly" coords="130,147,200,107,254,219,130,228"
+              href="https://developer.mozilla.org/docs/Web/HTML"
+              target="_blank" alt="HTML">
+        <area shape="poly" coords="130,147,130,228,6,219,59,107"
+              href="https://developer.mozilla.org/docs/Web/CSS"
+              target="_blank" alt="CSS">
+        <area shape="poly" coords="130,147,200,107,130,4,59,107"
+              href="https://developer.mozilla.org/docs/Web/JavaScript"
+              target="_blank" alt="JavaScript">
+    </map>
+    <img usemap="#infographic" src="../Day1/img/flower.jpeg" alt="MDN infographic">
+    
+    <br>
+
+    <label for="fuel">Fuel level:</label>
+
+<meter id="fuel"
+       min="0" max="100"
+       low="33" high="66" optimum="80"
+       value="50">
+    at 50/100
+</meter>
+
+<br>
+
+<label for="dino-select">Choose a dinosaur:</label>
+<select id="dino-select">
+    <optgroup label="Theropods">
+        <option>Tyrannosaurus</option>
+        <option>Velociraptor</option>
+        <option>Deinonychus</option>
+    </optgroup>
+    <optgroup label="Sauropods">
+        <option>Diplodocus</option>
+        <option>Saltasaurus</option>
+        <option>Apatosaurus</option>
+    </optgroup>
+</select>
+
+<br>
+
+<ruby>
+    明日 <rp>(</rp><rt>Ashita</rt><rp>)</rp>
+    </ruby>
+
+    <br>
+
+    <details>
+        <summary>I have keys but no doors. I have space but no room. You can enter but can’t leave. What am I?</summary>
+        A keyboard.
+    </details>
+
+    <br>
+
+    <table id="producttable">
+        <thead>
+          <tr>
+            <td>UPC_Code</td>
+            <td>Product_Name</td>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- existing data could optionally be included here -->
+        </tbody>
+      </table>
+      
+      <template id="productrow">
+        <tr>
+          <td class="record"></td>
+          <td></td>
+        </tr>
+      </template>
+<br>
+
+<p>The Cure will be celebrating their 40th anniversary on <time datetime="2018-07-07">July 7</time> in London's Hyde Park.</p>
+
+<p>The concert starts at <time datetime="20:00">20:00</time> and you'll be able to enjoy the band for at least <time datetime="PT2H30M">2h 30m</time>.</p>
+
+<br>
+
+<p>The volume of a box is <var>l</var> × <var>w</var> × <var>h</var>, where <var>l</var> represents the length, <var>w</var> the width and <var>h</var> the height of the box.</p>
+
+
+<br>
+
+
+<div id="example-paragraphs">
+    <p>Fernstraßenbauprivatfinanzierungsgesetz</p>
+    <p>Fernstraßen<wbr>bau<wbr>privat<wbr>finanzierungs<wbr>gesetz</p>
+    <p>Fernstraßen&shy;bau&shy;privat&shy;finanzierungs&shy;gesetz</p>
+</div>
+
+
+</body>
+</html>

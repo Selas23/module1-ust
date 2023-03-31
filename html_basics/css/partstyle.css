@@ -1,0 +1,76 @@
+.portal{
+	width:100%;
+	background-color:lightgrey;
+	height:50px;
+}
+.header{
+	width:100%;
+background-color:yellow;
+	
+}
+.header1{
+	width:20%;
+	height:100px;
+	float:left;
+}
+.header2{
+	
+	width:70%;
+	height:60%;
+	float:left;
+	background-color:lightgrey;
+	
+}
+.footer{
+	height:100px;
+	background-color:white;
+	
+}
+.mq{
+	height:50px;
+	font-size:20px;
+	color:navy;
+
+}
+li {display:block;
+color:white;
+text-align:centre;
+padding:10px;
+font-size:30px;
+text-decoration:none;
+}
+li{
+	list-style:none;
+	float:left;
+	padding:10px;
+	font-size:20px;
+}
+ul{
+	overflow:hidden;
+	background-color:black;
+}
+li a:hover{
+	color:blue;
+	background:white;
+}
+
+.menu {  float:left; width: 150%;  height: 60px; background-color: orange;  color:white;font-size:30px ; }
+.menu ul { overflow: hidden; z-index: 1000; position: absolute; }
+.menu li a { display: block;color:white;text-align: center;font-size:25px; font-weight:bold;text-decoration: none;  padding: 10px; }
+.menu li  { float: left;list-style: none;width: 90px;  color:white;text-align:center;font-size:22px; font-weight:bold; padding: 10px; }
+
+
+
+.menu li a:hover  { background-color:pink; }
+
+
+.menu li ul li a:hover{
+background:pink; 
+}
+
+h3{
+	float:right-side;
+}
+.navcontent{  float:left; height:500px; width:110%; margin-top:40px;}
+.nav { float:left; height:500px; width:18%;  background-color:purple; color:white;}
+.content { float:left; height:400px; width:80%;  background-color:blue; color:white; text-align:center;}

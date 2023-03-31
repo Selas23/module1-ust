@@ -1,0 +1,20 @@
+/**{background-image:img/2.png;font:cursive}*/
+body {
+margin: auto;
+background-image:"img/2.png";
+background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+text-align:center;
+color:white ;
+size: 55px;
+}
+.mytable{
+	background-color:linen;
+	color:navy;
+	height:30px;
+	 width: 300px;
+	padding: 25px;
+	box-sizing: border-box;
+	margin:auto;
+	
+	}

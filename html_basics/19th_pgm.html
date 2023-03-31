@@ -1,0 +1,27 @@
+<html>
+<head><title> change attributes </title>
+<script>
+
+function changeLabelStyle() {
+
+document.getElementById("demo").innerHTML="Hello JavaScript";
+document.getElementById("demo").style.fontSize="25px";
+document.getElementById("demo").style.color="red";
+document.getElementById("demo").style.backgroundColor="orange";
+
+//alert(document.getElementById("demo").style.backgroundColor);
+
+}
+
+function myonload() {
+document.getElementById("bd").style.backgroundColor="green";
+}
+</script>
+</head>
+<body id="bd"  onload="myonload()">
+<label id="demo"> I am done with programming </label>
+<input type="button" name="button" value="click" onClick="changeLabelStyle()" />
+
+
+</body>
+</html>
